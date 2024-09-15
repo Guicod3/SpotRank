@@ -74,3 +74,5 @@ app.get('/artistas/:id', (req, res) => {
 // app.listen(port, () => {
 //   console.log('Servidor ativo na porta:', port);
 // });
+
+module.exports = app;
