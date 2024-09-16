@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () =>{ //Load artist
             li.className = "cursor-pointer flex items-center justify-start text-xl hover:shadow-lg transition hover:bg-green-600 px-2 py-1 rounded-lg hover:-translate-y-1 hover:scale-110 max-sm:text-sm"
             spanNumberTracks.className = "mr-3 w-7 max-sm:hidden"
             imgtracks.className = "w-12 h-12 rounded-lg mr-5 max-sm:mr-2 max-sm:size-7"
-            imgplayTracks.className = "w-12 h-12"
+            imgplayTracks.className = "w-12 h-12 max-sm:w-10 max-sm:h-10"
             spanNameTracks.className = "font-bold mr-auto"
             spanArtistTracks.className = "text-gray-400 font-semibold text-sm mr-auto"
             divtrakcs.className = "flex flex-col items-center mr-5"
@@ -139,11 +139,11 @@ document.addEventListener('DOMContentLoaded', () =>{ //Load artist
         const spanNameGeneros = document.createElement('span')
 
         //Create ClassName Header
-        spanArtistImagem.className = 'size-64 mr-5 ml-auto rounded-lg'
-        divHeaderGeneral.className = 'flex flex-col mr-auto mb-auto'
-        spanNameArtist.className = 'text-8xl font-extrabold mt-7 mb-5'
-        divHeaderSeguidores.className = 'ml-1 text-lg font-bold'
-        divHeaderGeneros.className = 'ml-1 text-lg font-bold'
+        spanArtistImagem.className = 'size-64 mr-5 ml-auto rounded-lg max-sm:size-44 max-sm:mx-auto'
+        divHeaderGeneral.className = 'flex flex-col mr-auto mb-auto max-sm:mx-auto'
+        spanNameArtist.className = 'text-8xl font-extrabold mt-7 mb-5 max-sm:text-4xl max-sm:mt-1 max-sm:mb-2'
+        divHeaderSeguidores.className = 'ml-1 text-lg font-bold max-sm:text-center max-sm:ml-0'
+        divHeaderGeneros.className = 'ml-1 text-lg font-bold max-sm:text-center max-sm:ml-0 max-sm:text-base'
         spanNumSeguidores.className = 'text-green-500'
 
         //Changes header
