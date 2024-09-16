@@ -1,6 +1,6 @@
 require('dotenv').config({path: '../.env'});
 // const config = require('./config.js')
-// const path = require('path');
+const path = require('path');
 const express = require('express');
 const app = express();
 // const port = config.PORT;
