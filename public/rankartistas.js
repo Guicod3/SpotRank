@@ -1,6 +1,5 @@
 const liRank = document.getElementById('liArtist')
 const liGenres = document.getElementById('liGenres')
-const { redirect } = require('./redirect.cjs')
 
 const FirstLetter = (text) => { //Retornar a primeira letra maiúscula
     return text
@@ -49,7 +48,10 @@ document.addEventListener('DOMContentLoaded', () =>{ //Load ranking and genres
             spanName.textContent = item.name
             spanFollowers.textContent = new Intl.NumberFormat().format(item.followers);
             li.id = index
-            li.addEventListener('click', redirect)
+            li.addEventListener('click', (event) => {
+                const id = li.id
+                window.open(`/artistas/${id}`, '_blank');
+            });
 
             //AppendChild
             div.appendChild(spanPopular)
