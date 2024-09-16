@@ -1,9 +1,9 @@
 require('dotenv').config({path: '../.env'});
-const config = require('./config.js')
-const path = require('path');
+// const config = require('./config.js')
+// const path = require('path');
 const express = require('express');
 const app = express();
-const port = config.PORT;
+// const port = config.PORT;
 app.use(express.static(path.join(__dirname, '../public')))
 const Artists = require('./Models/Artists.js');
 const { verifyRank, verifyTop5Genres } = require('./Services/verifyRank.js');
@@ -71,8 +71,8 @@ app.get('/artistas/:id', (req, res) => {
   res.sendFile(path.join(__dirname, '../public/views/artistas.html'))
 })
 
-app.listen(port, () => {
-  console.log('Servidor ativo na porta:', port);
-});
+// app.listen(port, () => {
+//   console.log('Servidor ativo na porta:', port);
+// });
 
 module.exports = app;
