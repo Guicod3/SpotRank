@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () =>{ //Load ranking and genres
             li.id = index
             li.addEventListener('click', (event) => {
                 const id = li.id
-                window.open(`/artistas/${id}`);
+                window.location.href(`/artistas/${id}`);
             });
 
             //AppendChild
